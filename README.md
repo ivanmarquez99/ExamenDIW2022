@@ -1,16 +1,19 @@
 # Examen Diseño de Interfaces Web
-## Diciembre 2022
+## nombre_del_alumno
 
-# nombre_del_alumno
+### Instrucciones:
 
-Instrucciones:
+Esta prueba tiene como finalidad evaluar los aprendizajes de __Diseño de Interfaces Web__.
 
-Esta prueba tiene como finalidad evaluar los aprendizajes de Diseño de Interfaces Web.
+1. Lee atentamente y elabora tu respuesta a las preguntas indicadas.
 
-Lee atentamente y elabora tu respuesta a las preguntas indicadas.
+2. Solo podrás modificar los archivos ya existentes en el proyecto.
 
-Además del código del proyecto, deberás incluir capturas de pantalla donde se vea el interfaz diseñado (al menos las mismas 3 capturas de pantalla que se proponen en el ejercicio) 
+3. Además del código del proyecto, deberás incluir capturas de pantalla donde se vea el interfaz diseñado (al menos las mismas 3 capturas de pantalla que se proponen en el ejercicio) 
 
-Añade en las respuestas todo aquello que consideres conveniente para justificar y demostrar tu respuesta (código, comentarios de código, capturas de pantalla, imágenes, etc.) 
+4. Añade en las respuestas todo aquello que consideres conveniente para justificar y demostrar tu respuesta (código, comentarios de código, capturas de pantalla, imágenes, etc.) 
+
+5. Una vez terminado, adjunta el enlace a tu repositorio con el proyecto del examen (no olvides hacerlo público)
+
 
 Si las instrucciones no se siguen como se especifican el examen no será evaluado 
