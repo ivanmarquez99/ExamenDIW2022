@@ -1,8 +1,189 @@
-/*# sourceMappingURL=style.css.map */
+/* Iván Aurelio Márquez Morales */
 
 body {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    padding: 0px;
-    height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  ) no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  text-align: center;
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 20px;
+  min-width: 60vw;
+}
+
+header {
+  border-bottom: 2px solid black;
+  font-family: "Fredoka One";
+}
+
+footer {
+  border-top: 2px solid black;
+  font-family: "Fredoka One";
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content {
+  min-height: 25vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.tftable {
+  font-size: 12px;
+  width: 100%;
+  border-width: 1px;
+  border-color: orange;
+  border-collapse: collapse;
+}
+.tftable th {
+  font-size: 12px;
+  background-color: orange;
+  border-width: 1px;
+  border-style: solid;
+  border-color: orange;
+  font-family: "Fredoka One";
+  padding: 5px;
+}
+
+.tftable td {
+  font-size: 12px;
+  border-width: 1px;
+  padding: 5px;
+  border-style: solid;
+  border-color: orange;
+}
+
+.tftable tr:hover {
+  background-color: rgba(239, 156, 1, 0.8);
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.tag {
+  background-color: gray;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+button.gray {
+    background-color: gray;
+    font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: linear-gradient(
+    45deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.modal-content {
+  position: relative;
+  background-color: lightgray;
+  margin: auto;
+  width: 40%;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+input {
+    width: 8rem;
+}
+
+input#hombre, input#mujer {
+    width: 1rem;
+}
+
+.number {
+    font-size: 1.3rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

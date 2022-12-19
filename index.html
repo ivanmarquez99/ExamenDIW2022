@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Completa tu nombre -->
-    <title>NOMBRE_DEL_ALUMNO</title>
-
-    <style src="static/style.css"></style>
+    <title>Iván Aurelio Márquez Morales</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
 </head>
+
 <body>
 
     <!-- Completar html aqui -->
@@ -18,15 +20,105 @@
         <header>
             <h1>Aplicación de dietas</h1>
         </header>
-        <div id="content">
+        <div class="content">
 
+            <table class="tftable" border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Sexo</th>
+                    <th>Edad</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>Actividad</th>
+                    <th>IM Basal</th>
+                    <th>Calorias necesarias</th>
+                </tr>
+                <tr>
+                    <td>Francisco Romero</td>
+                    <td><span class="tag blue">hombre</span></td>
+                    <td>31</td>
+                    <td>198</td>
+                    <td>89</td>
+                    <td><span class="tag gray">moderada</span></td>
+                    <td><span class="number">1427</span> kCal</td>
+                    <td><span class="number">1712</span> kCal</td>
+                </tr>
+                <tr>
+                    <td>Jose Antonio Lara</td>
+                    <td><span class="tag blue">hombre</span></td>
+                    <td>46</td>
+                    <td>187</td>
+                    <td>85</td>
+                    <td><span class="tag gray">moderada</span></td>
+                    <td><span class="number">1333</span> kCal</td>
+                    <td><span class="number">1712</span> kCal</td>
+                </tr>
+                <tr>
+                    <td>Jeniffer Lopez</td>
+                    <td><span class="tag pink">mujer</span></td>
+                    <td>45</td>
+                    <td>167</td>
+                    <td>56</td>
+                    <td><span class="tag gray">alta</span></td>
+                    <td><span class="number">1256</span> kCal</td>
+                    <td><span class="number">1943</span> kCal</td>
+                </tr>
+                <tr>
+                    <td>Iván Márquez</td>
+                    <td><span class="tag blue">hombre</span></td>
+                    <td>45</td>
+                    <td>167</td>
+                    <td>56</td>
+                    <td><span class="tag gray">alta</span></td>
+                    <td><span class="number">1256</span> kCal</td>
+                    <td><span class="number">1943</span> kCal</td>
+                </tr>
+                <tr>
+                    <td>Irene Pérez</td>
+                    <td><span class="tag pink">mujer</span></td>
+                    <td>45</td>
+                    <td>167</td>
+                    <td>56</td>
+                    <td><span class="tag gray">alta</span></td>
+                    <td><span class="number">1256</span> kCal</td>
+                    <td><span class="number">1943</span> kCal</td>
+                </tr>
+            </table>
+
+
+            <button id="abrirModal">Añadir cliente</button>
         </div>
         <footer>
             <h3>Iván Aurelio Márquez Morales© 2022</h3>
         </footer>
+
+        <div id="ventanaModal" class="modal">
+            <div class="modal-content">
+                <header><h2>Nuevo cliente</h2></header>
+                <div class="content">
+                    <form method="GET" id="datos">
+                        <label for="name">Nombre: <input type="text" name="name" id="name" required></label>
+                        <label for="gen">Sexo: 
+                            <input type="radio" name="gen" id="hombre" required>hombre
+                            <input type="radio" name="gen" id="mujer" checked>mujer
+                        </label>
+                        <label for="age">Edad: <input type="number" name="age" id="age" placeholder="16" required min="18"></label>
+                        <label for="height">Altura (cm): <input type="number" name="height" id="height" placeholder="176" required min="120"></label>
+                        <label for="weight">Peso (kg): <input type="number" name="weight" id="weight" placeholder="78" required min="40"></label>
+                        <label for="activity">Actividad fiísica: <select name="activity" id="activity" required>
+                            <option value="suave-sedentaria">suave o sedentaria</option>
+                            <option value="moderada">moderada</option>
+                            <option value="alta">alta</option>
+                        </select></label>
+                    </form>
+                </div>
+                <footer><button type="submit" form="datos" id="crearnuevos">Añadir nuevo</button><button class="gray cerrar">Volver atrás</button></footer>
+            </div>
+          </div>
     </main>
 
     <script src="static/app.js"></script>
 
 </body>
+
 </html>
